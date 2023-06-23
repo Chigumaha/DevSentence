@@ -1,0 +1,4 @@
+# binフォルダ内の「.xlsm」「.doc」ファイルはGit管理対象外とする＝アップロードされない
+bin/*.xlsm
+# 「command.txt」はGit管理対象外とする
+command.txt
