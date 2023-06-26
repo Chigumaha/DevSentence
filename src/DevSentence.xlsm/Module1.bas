@@ -1,6 +1,7 @@
 Attribute VB_Name = "Module1"
 Sub output()
     Const str1 As String = " at each application then self-recovered after each application"
+    Const str5 As String = " at some application then self-recovered after each application repeatedly"
     Const str2 As String = " during test"
     Const strAnd As String = " and"
     Const str3 As String = " after test"
@@ -21,6 +22,8 @@ Sub output()
         Select Case appType
         Case "cycles"
             devSentence = funcName & duringObservation & str1 & str2 & strAnd & afterObservation & str3 & str4 & ratedBehavior
+'        Case Else
+'            devSentence = funcName & duringObservation & str5 & str2 & strAnd & afterObservation & str3 & str4 & ratedBehavior
         End Select
         
         Select Case appType
@@ -28,10 +31,10 @@ Sub output()
             devSentence = funcName & duringObservation & str1 & str2 & strAnd & afterObservation & str3 & str4 & ratedBehavior
         End Select
         
-'        Select Case appType
-'        Case "dropout"
-'            devSentence = funcName & duringObservation & str1 & str2 & strAnd & afterObservation & str3 & str4 & ratedBehavior
-'        End Select
+        Select Case appType
+        Case "some cycles"
+            devSentence = funcName & duringObservation & str5 & str2 & strAnd & afterObservation & str3 & str4 & ratedBehavior
+        End Select
                 
         Select Case appType
         Case "N/A"
