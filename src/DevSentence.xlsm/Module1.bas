@@ -47,6 +47,6 @@ Sub output()
     End With
     
     'end process
-    MsgBox ("Completed")
+    MsgBox ("Finished")
     
 End Sub
